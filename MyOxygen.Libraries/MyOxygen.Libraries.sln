@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MyOxygen.Libraries.Shared", "MyOxygen.Libraries.Shared\MyOxygen.Libraries.Shared.shproj", "{408241B6-90EA-4113-8010-AE24DB63F83C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyOxygen.Libraries.iOS", "MyOxygen.Libraries.iOS\MyOxygen.Libraries.iOS.csproj", "{07C0ED44-2D20-4A04-AEDD-089C6B88A6AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyOxygen.Libraries.Android", "MyOxygen.Libraries.Android\MyOxygen.Libraries.Android.csproj", "{CDDF6E6A-8EF0-43CB-81E1-78F84D76BC90}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "MyOxygen.Libraries.NuGet", "MyOxygen.Libraries.NuGet\MyOxygen.Libraries.NuGet.nuproj", "{85788D28-B45B-45DE-9EED-C9EF3E912639}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07C0ED44-2D20-4A04-AEDD-089C6B88A6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C0ED44-2D20-4A04-AEDD-089C6B88A6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C0ED44-2D20-4A04-AEDD-089C6B88A6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C0ED44-2D20-4A04-AEDD-089C6B88A6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDF6E6A-8EF0-43CB-81E1-78F84D76BC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDF6E6A-8EF0-43CB-81E1-78F84D76BC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDF6E6A-8EF0-43CB-81E1-78F84D76BC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDF6E6A-8EF0-43CB-81E1-78F84D76BC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85788D28-B45B-45DE-9EED-C9EF3E912639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85788D28-B45B-45DE-9EED-C9EF3E912639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85788D28-B45B-45DE-9EED-C9EF3E912639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85788D28-B45B-45DE-9EED-C9EF3E912639}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

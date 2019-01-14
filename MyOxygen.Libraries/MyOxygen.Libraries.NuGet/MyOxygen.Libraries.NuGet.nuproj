@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85788D28-B45B-45DE-9EED-C9EF3E912639}</ProjectGuid>
+    <Description>A collection of simple libraries to facilitate code development.</Description>
+    <PackageId>MyOxygen.Libraries</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>thomasbartleet</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyOxygen.Libraries</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>MyOxygen.Libraries.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyOxygen.Libraries.Android\MyOxygen.Libraries.Android.csproj">
+      <Project>{CDDF6E6A-8EF0-43CB-81E1-78F84D76BC90}</Project>
+      <Name>MyOxygen.Libraries.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyOxygen.Libraries.iOS\MyOxygen.Libraries.iOS.csproj">
+      <Project>{07C0ED44-2D20-4A04-AEDD-089C6B88A6AA}</Project>
+      <Name>MyOxygen.Libraries.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
